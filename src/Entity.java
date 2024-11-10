@@ -3,7 +3,7 @@ import java.util.Random;
 enum EntityType {
     Human, Monster;
 }
-
+@SuppressWarnings("unused")
 public class Entity {
     // Constants
     private static final int MAX_HP = 100;
