@@ -10,7 +10,6 @@ public class Entity {
     private static final int MIN_HP = 1;
     
     private static final int MAX_LEVEL = 5;
-    //private static final int MAX_DEF = 100;
 
     //
     private String name;
@@ -18,7 +17,6 @@ public class Entity {
     private int level;
     private int EXP;
     private int HP;
-    //private int DEF;
 
     public Entity(String name, EntityType type) {
         this.name = name;
