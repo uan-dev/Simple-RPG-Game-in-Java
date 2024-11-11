@@ -8,7 +8,6 @@ public class Entity {
     // Constants
     private static final int MAX_HP = 100;
     private static final int MIN_HP = 1;
-    
     private static final int MAX_LEVEL = 5;
 
     //
@@ -58,7 +57,6 @@ public class Entity {
         System.out.printf("HP    : %s%n", this.HP);
     }
 
-    
     public void earnEXP(int damage) {
         Random earn = new Random();
         this.EXP = earn.nextInt(damage + 100);
