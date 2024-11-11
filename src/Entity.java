@@ -36,7 +36,13 @@ public class Entity {
     }
 
     public void setHP(int HP){
-        this.HP = HP;
+        if (HP > 100) {
+            this.HP = MAX_HP;
+        } else if (HP <= 0) {
+            this.HP = MIN_HP;
+        } else {
+            this.HP = HP;
+        }
     }
 
     public void setLevel(int level) {
@@ -48,8 +54,8 @@ public class Entity {
         System.out.printf("%nName  : %s%n", this.name);
         System.out.printf("Type  : %s%n", this.type);
         System.out.printf("Level : %s%n", this.level);
-        System.out.printf(" EXP  : %s%n", this.EXP);
-        System.out.printf(" HP   : %s%n", this.HP);
+        System.out.printf("EXP   : %s%n", this.EXP);
+        System.out.printf("HP    : %s%n", this.HP);
     }
 
     
